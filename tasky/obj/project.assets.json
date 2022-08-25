@@ -10037,19 +10037,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jholg\\.nuget\\packages\\": {}
+    "C:\\Users\\alvar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\proyectoTasky\\tasky\\tasky\\tasky.csproj",
+      "projectUniqueName": "C:\\Users\\alvar\\Desktop\\SpeechText\\Tasky\\tasky\\tasky.csproj",
       "projectName": "tasky",
-      "projectPath": "G:\\proyectoTasky\\tasky\\tasky\\tasky.csproj",
-      "packagesPath": "C:\\Users\\jholg\\.nuget\\packages\\",
-      "outputPath": "G:\\proyectoTasky\\tasky\\tasky\\obj\\",
+      "projectPath": "C:\\Users\\alvar\\Desktop\\SpeechText\\Tasky\\tasky\\tasky.csproj",
+      "packagesPath": "C:\\Users\\alvar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alvar\\Desktop\\SpeechText\\Tasky\\tasky\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jholg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alvar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
