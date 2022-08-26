@@ -87,17 +87,32 @@ namespace tasky.Controllers
             return NoContent();
         }
 
-        private bool UserExists(int id)
-        {
-            throw new NotImplementedException();
-        }
-
 
 
         // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult<UserModel>> DeleteUser(int id)
         {
+            if (_context.User == null)
+            {
+                return NotFound();
+            }
+            var user = await _context.User.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            _context.User.Remove(user);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool UserExists(int id)
+        {
+            return (_context.User?.Any(e => e.Id_User == id)).GetValueOrDefault();
         }
     }
 }
+    
