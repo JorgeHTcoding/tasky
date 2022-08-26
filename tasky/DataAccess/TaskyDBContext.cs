@@ -24,8 +24,8 @@ namespace tasky.DataAccess
             var logger = _loggerFactory.CreateLogger<TaskyDBContext>();
 
             optionsBuilder
-                .UseMySql("server=myshoulder.cdvg9i8dvcl6.eu-west-3.rds.amazonaws.com;port=3306;user=ComboWombo;password=ComboWombo123!;database=TaskyServer",
-                ServerVersion.AutoDetect("server=myshoulder.cdvg9i8dvcl6.eu-west-3.rds.amazonaws.com;port=3306;user=ComboWombo;password=ComboWombo123!;database=TaskyServer"))
+                .UseMySql("server=myshoulder.cdvg9i8dvcl6.eu-west-3.rds.amazonaws.com;port=3306;user=ComboWombo;password=ComboWombo123!;database=TaskyServer;convert zero datetime=True",
+                ServerVersion.AutoDetect("server=myshoulder.cdvg9i8dvcl6.eu-west-3.rds.amazonaws.com;port=3306;user=ComboWombo;password=ComboWombo123!;database=TaskyServer;convert zero datetime=True"))
                 .LogTo(d => logger.Log(LogLevel.Information, d, new[] { DbLoggerCategory.Database.Name }), LogLevel.Information)
                 .EnableSensitiveDataLogging()
                 .EnableDetailedErrors();
